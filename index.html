@@ -1,18 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anokye | Portfolio</title>
-</head>
-<body>
-    <!-- header section -->
-    <header></header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- font awesome icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link rel="icon" href="./images/astrazeneca.svg" type="image/x-icon">
+        <title>Anokye | Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="current_date">
+                <div class="current_week">
+                    <span>Happy,</span>
+                    <span data-testid="currentDayOfTheWeek"></span>
+                </div>
+                <p data-testid="currentUTCTime"></p>
+            </div>
+            <nav>
+                <div class="nav-icons">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#">home</a>
+                    </li>
+                    <li>
+                        <a href="#contact">say hello</a>
+                    </li>
+                    <li>
+                        <a href="#about">about</a>
+                    </li>
+                </ul>
+                <div id="logo">
+                    <a href="#main">
+                        <i class="fi fi-brands-astrazeneca"></i>
+                    </a>
+                </div>
+                <!-- social icons -->
+                <div class="social">
+                    <a href="https://github.com/iamernesto14" target="_blank">
+                        <i class="fa-brands fa-github" data-testid="githubURL"></i>
+                    </a>
+                    <a href="https://twitter.com/iamernesto14">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ernesto-anokye/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </nav>
+            <div class="dropdown">
+                <ul class="nav-links_drop active">
+                    <li>
+                        <a href="#">home</a>
+                    </li>
+                    <li>
+                        <a href="#work">work</a>
+                    </li>
+                    <li>
+                        <a href="#contact">say hello</a>
+                    </li>
+                    <li>
+                        <a href="#about">about</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- header end -->
+        <!-- main section -->
+        <main id="main">
+            <section class="hero">
+                <div class="hero_content">
+                    <div class="hero_image">
+                        <img src="./images/ernest_black.png" alt="iamernesto14" data-testid="slackDisplayImage">
+                    </div>
+                    <div class="hero_head">
+                        <h1 data-testid="slackUserName">
+                            Hello, i'm
+                            <span>Ernest.</span>
+                        </h1>
+                        <h4 data-testid="myTrack">
+                            I am a multidisciplinary
+                            <span>Frontend Developer</span>
+                            from Ghana
+                        </h4>
+                        <!-- btn section -->
+                        <div class="btn">
+                            <button>get in touch</button>
+                            <button><a href="./ERNEST's Resume.pdf" download="">Download Resume</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- main section -->
-    <main></main>
+            <!-- About me section -->
+            <div id="about_me_wrapper">
+              <h3 id="about">About Me</h3>
+             <div class="about_me_description">
+              <p>I'm Ernest, a passionate frontend developer with a sharp eye for design and a dedication to creating exceptional web experiences. Based in Accra, I specialize in turning ideas into interactive and visually appealing websites. My expertise includes HTML, CSS, and JavaScript, and I'm well-versed in modern front-end frameworks like React. I take pride in delivering pixel-perfect solutions and am committed to transforming your vision into a stunning, user-friendly reality.</p>
 
-    <!-- footer section -->
-    <footer></footer>
-</body>
+              <p>My approach to web development centers on collaboration and communication. Understanding your goals and objectives is paramount to me. I believe that by working closely with you, I can deliver a product that not only meets but exceeds your expectations. Whether it's crafting an elegant user interface, optimizing performance, or tackling complex front-end challenges, I'm eager to take on your project.</p>
+
+              <p>When I'm not coding, I'm exploring the latest design trends, attending tech meetups, or enjoying a cup of coffee at a local café. Continuous learning is a passion of mine, and I actively seek out new challenges to expand my skill set and stay at the forefront of web development. If you're looking for a dedicated and creative frontend developer to bring your web project to life, I'd love to connect. Feel free to reach out and together, we can build something amazing.</p>
+             </div>   
+            </div>
+
+            <!-- work section -->
+            <section id="work" class="work_container">
+                <div class="work_wrapper reveal">
+                  <h2>my work</h2>
+                  <div class="work_links reveal">
+                    <div class="work_links_wrapper">
+                      <ul>
+                      <li><a href="#">All</a></li>
+                      <li><a href="#">App</a></li>
+                      <li><a href="#">Games</a></li>
+                      <li id="work_round"><a href="#">css art</a></li>
+                    </ul>
+                    </div>
+                    
+                  </div>
+                  <div class="work_image_wrapper">
+                    <div class="work_image reveal">
+                        <img src="./images/codevo.png" class="card_img" alt="image of codevo project">
+                        <div class="card_body">
+                          <div class="card_title">
+                            <h3>codevo</h3>
+                          </div> 
+                        </div>
+                    </div>
+                    <div class="work_image reveal">
+                        <img src="./images/Etch-a-Sketch_.png" class="card_img" alt="image of Etch-a-Sketch project">
+                        <div class="card_body">
+                          <div class="card_title">
+                            <h3>Etch-a-Sketch</h3>
+                          </div> 
+                        </div>
+                    </div>
+                    <div class="work_image reveal">
+                        <img src="./images/little_lemon.png" class="card_img" alt="little_lemon restaurant image">
+                        <div class="card_body">
+                          <div class="card_title">
+                            <h3>Little Lemon</h3>
+                          </div> 
+                        </div>
+                    </div>
+                    <div class="work_image reveal">
+                        <img src="./images/tmart.png" class="card_img" alt="image of TMART shop">
+                        <div class="card_body">
+                          <div class="card_title">
+                            <h3>TMART</h3>
+                          </div> 
+                        </div>
+                    </div>
+                    <div class="work_image reveal">
+                        <img src="./images/bbaygirl.png" class="card_img" alt="image of bbaygirl collections">
+                        <div class="card_body">
+                          <div class="card_title">
+                            <h3>Baby girl</h3>
+                          </div> 
+                        </div>
+                    </div>
+                    <div class="work_image reveal">
+                        <img src="./images/theMath.png" class="card_img" alt="image of calculator project">
+                        <div class="card_body">
+                          <div class="card_title">
+                            <h3>math</h3>
+                          </div> 
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="my_stack reveal">
+                  <h3>Tools & Technology</h3>
+                  <div class="my_stack_images">
+                    <div class="stack_image">
+                      <img src="./images/html5.svg" alt="html5 logo">
+                      <p>HTML5</p>
+                    </div>
+                    <div class="stack_image">
+                      <img src="./images/css3.svg" alt="css3 logo">
+                      <p>CSS3</p>
+                    </div>
+                    <div class="stack_image">
+                      <img src="./images/git.svg" alt="git logo">
+                      <p>Git</p>
+                    </div>
+                    <div class="stack_image">
+                      <img src="./images/javascript.svg" alt="git logo">
+                      <p>JavaScript</p>
+                    </div>
+                    <div class="stack_image">    
+                        <img class="bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                        <p>bootstrap</p>
+                    </div>
+                    <div class="stack_image">    
+                      <img class="bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                      <p>React</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        
+              <section id="contact" class="contact-container">
+          <h3>Contact Me</h3>
+          <div class="contact_wrapper">
+            <form id="contact-form">
+            <div class="form-group">
+              <label for="name" class="sr-only">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="sr-only">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="sr-only">Message:</label>
+              <textarea id="message" name="message" rows="7" placeholder="Type your message..." required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        
+          <div class="contact_description">
+            <h3>get in touch</h3>
+            <p>I am a web developer who is dedicated to providing high-quality, user-friendly websites and web applications. I am committed to ensuring that you are completely satisfied with your project.</p>
+            <p>I will personally review your message within 24 hours and provide you with a tailored solution that meets your specific requirements. Thank you for your trust!</p>
+            <div>
+              <div>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Accra, Ghana</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <span>(+233) 245272900</span>
+              </div>
+              <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span><a href="mailto:eernesto211@gmail.com">eernesto211@gmail.com</a></span>
+              </div>
+            </div>
+            <div>
+              <a href="https://github.com/iamernesto14"><i class="fa-brands fa-github" data-testid="githubURL"></i></a>
+                  <a href="https://twitter.com/iamernesto14"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          </div>
+        </section>
+        </main>
+        <!-- foot section -->
+        <footer>
+            <p>Copyright &copy; 2024 | All right reserved</p>
+            <p>Designed by
+                <span>Ernest Anokye</span>
+            </p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
 </html>
